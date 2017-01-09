@@ -87,7 +87,7 @@ You may be asked to login again. After login, you will land on the <b>Bluemix Da
 
 ## Deploy the App
 
-<b>1. Click on the 'Deploy to Bluemix' button below.</b>
+<b>1. Click on the 'Deploy to Bluemix' button shown below (The button is located on this very webpage right below this bullet item - do NOT look for it within your bluemix account!).</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/apiBlockchain/GscLabBlockchainApp.git)
 
