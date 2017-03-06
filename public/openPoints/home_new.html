@@ -236,12 +236,12 @@
 		var toUser 			= "T5940872";
 		var description 	= "Purchased Retail Package"
 
-		var retailPackage 	= $('input[name="brand"]:checked').val();
+		var retailPackage 	= $('input[name="city"]:checked').val();
 		var arraySplit 		= retailPackage.split(':');
-		var brandName 		= arraySplit[0];
+		var cityName 		= arraySplit[0];
 		var pointsAmount 	= arraySplit[1];
-		var description 	= "Purchased Retail Package: " + brandName;
-		var contract 		= brandName;
+		var description 	= "Purchased Retail Package to " + cityName;
+		var contract 		= cityName;
 		var e 				= document.getElementById("retailPackageChoice");
 
 		transferString = "sender=" + fromUser + "&receiver=" + toUser
@@ -263,13 +263,13 @@
 		var toUser = e.options[e.selectedIndex].value;
 		var fromUser = "T5940872";
 		var description = "Points For Feedback"
-		var contract 		= "Feedback";
-        
+
 		var pointsAmount = 1000;
 
 		var e = document.getElementById("retailPackageChoice");
 
-		transferString = "sender=" + fromUser + "&receiver=" + toUser + "&amount=" + pointsAmount + "&contract=" + contract + "&description=" + description;
+		transferString = "sender=" + fromUser + "&receiver=" + toUser
+				+ "&amount=" + pointsAmount + "&description=" + description;
 
 
 		var url = localUrlStub + "/transferpoints?" + transferString
@@ -298,7 +298,7 @@
 		var currentIndex = e.selectedIndex;
 		var currentUserId = e.options[e.selectedIndex].value;
 
-		// Only show the 'Create Retail Offer' tab for OpenRetail
+		// Only show the 'Create Retail Offer' tab for Open Retail
 		var contractTab = document.getElementById("CreateOfferListElement");
 		if (currentUserId == "T5940872") {
 			contractTab.style.display = "block";
@@ -311,7 +311,7 @@
 	// Submit a new smart contract to the Blockchain service using the NODE JS REST API
 	function addSmartContract() {
 
-		var e = document.getElementById("SmartContractBrand");
+		var e = document.getElementById("SmartContractCity");
 		var contractId = e.options[e.selectedIndex].value;
 		var title = document.getElementById("contractTitle").value;
 		var term1 = document.getElementById("term1").value;
@@ -380,7 +380,7 @@
 					<option value="U2974034">Natalie</option>
 					<option value="U3151672">Anthony</option>
 					<option value="B1928564">OpenFN</option>
-					<option value="T5940872">OpenRetail</option>
+					<option value="T5940872">Open Retail</option>
 				</select>
 
 			</div>
@@ -417,13 +417,14 @@
 				<hr>
 				<p></p>
 				<form id="retailPackageChoice">
-					<input type="radio" name="brand" value="Son_Brand:10000" checked>
-					Son_Brand: 10k Points <br> <input type="radio" name="brand"
-						value="LF_Brand:15000"> LF_Brand: 15k Points<br>
-					<input type="radio" name="brand" value="Sam_Brand:20000">
-					Sam_Brand: 20k Points <br> <input type="radio" name="brand"
-						value="Viz_Brand:25000"> Viz_Brand: 25k Points <br> <input
-						type="radio" name="brand" value="Sha_Brand:30000"> Sha_Brand: 30k Points <br>
+					<input type="radio" name="city" value="Paris:10000" checked>
+					Paris: 10k Points <br> <input type="radio" name="city"
+						value="New York City:15000"> New York City: 15k Points<br>
+					<input type="radio" name="city" value="London:20000">
+					London: 20k Points <br> <input type="radio" name="city"
+						value="Tokyo:25000"> Tokyo: 25k Points <br> <input
+						type="radio" name="city" value="Rio de Janeiro:30000"> Rio
+					de Janeiro: 30k Points <br>
 
 				</form>
 				<p></p>
@@ -459,7 +460,7 @@
 					<option value="U2974034">Natalie</option>
 					<option value="U3151672">Anthony</option>
 					<option value="B1928564">OpenFN</option>
-					<option value="T5940872">OpenRetail</option>
+					<option value="T5940872">Open Retail</option>
 			</select>
 
 				<p></p>
@@ -489,14 +490,14 @@
 					<option value="bad">Bad</option>
 					<option value="terrible">Terrible</option>
 			</select> <br>
-			<br> Price: <select id="price">
+			<br> Food: <select id="food">
 					<option value="great">Great</option>
 					<option value="good">Good</option>
 					<option value="fair">Fair</option>
 					<option value="bad">Bad</option>
 					<option value="terrible">Terrible</option>
 			</select> <br>
-			<br> Delivery: <select id="delivery">
+			<br> Transportation: <select id="transportation">
 					<option value="great">Great</option>
 					<option value="good">Good</option>
 					<option value="fair">Fair</option>
@@ -521,12 +522,12 @@
 			<span id="CreateOfferPage">
 				<h3>Create Retail Offer</h3>
 
-				<hr> <br> Package: <select id="SmartContractBrand">
-					<option value="Son_Brand">Son_Brand: 10k Points</option>
-					<option value="LF_Brand">LF_Brand: 15k Points</option>
-					<option value="Sam_Brand">Sam_Brand: 20k Points</option>
-					<option value="Viz_Brand">Viz_Brand: 25k Points</option>
-					<option value="Sha_Brand">Sha_Brand: 30k Points</option>
+				<hr> <br> Package: <select id="SmartContractCity">
+					<option value="Paris">Paris: 10k Points</option>
+					<option value="New York City">New York City: 15k Points</option>
+					<option value="London">London: 20k Points</option>
+					<option value="Tokyo">Tokyo: 25k Points</option>
+					<option value="Rio de Janeiro">Rio de Janeiro: 30k Points</option>
 			</select>
 				<p></p>
 

@@ -1,10 +1,11 @@
 ---
 applications:
 - disk_quota: 1024M
-  name: marbles
-  command: "node app.js"
-  path: "."
+  name: GscLabBlockchainApp-mrslingbox-1030
+  command: node app.js
+  path: .
   instances: 1
   memory: 512M
   services:
-   - OpenPointsBlockchainService
+    - OpenPointsBlockchainService
+  host: GscLabBlockchainApp-mrslingbox-1030

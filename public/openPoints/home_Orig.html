@@ -38,8 +38,8 @@
 		document.getElementById(tabName).click();
 		evt.currentTarget.className += " active";
 
-		// Show/hide the retail offers tab
-		if (tabName == "Create Retail Offers") {
+		// Show/hide the travel offers tab
+		if (tabName == "Create Travel Offers") {
 			document.getElementById("CreateOfferPage").style.display = "block";
 			document.getElementById("CreateOfferMessage").style.display = "none";
 		}
@@ -158,11 +158,11 @@
 
 	}
 
-	// Parse a retail purchase response from Blockchain service
-	function parseRetailPurchase(response) {
+	// Parse a travel purchase response from Blockchain service
+	function parseTravelPurchase(response) {
 
-		document.getElementById('RetailOffersPage').style.display = "none"
-		document.getElementById('RetailOffersMessage').style.display = "block"
+		document.getElementById('TravelOffersPage').style.display = "none"
+		document.getElementById('TravelOffersMessage').style.display = "block"
 	}
 
 	// Parse a user feedback response from the Blockchain service
@@ -192,8 +192,8 @@
 	// Get the smart contracts from the Blockchain service using the NODE JS REST API
 	function displaySmartContracts() {
 
-		document.getElementById('RetailOffersPage').style.display = "block"
-		document.getElementById('RetailOffersMessage').style.display = "none"
+		document.getElementById('TravelOffersPage').style.display = "block"
+		document.getElementById('TravelOffersMessage').style.display = "none"
 
 		var url = localUrlStub + "/getAllContracts";
 		blockchainRestApi(url, parseSmartContracts);
@@ -229,20 +229,20 @@
 	}
 
 	// Issues a purchase package request to the Blockchain service using the NODE JS REST API
-	function purchaseRetailPackage() {
+	function purchaseTravelPackage() {
 
 		var e 				= document.getElementById("userAccount");
 		var fromUser 		= e.options[e.selectedIndex].value;
 		var toUser 			= "T5940872";
-		var description 	= "Purchased Retail Package"
+		var description 	= "Purchased Travel Package"
 
-		var retailPackage 	= $('input[name="brand"]:checked').val();
-		var arraySplit 		= retailPackage.split(':');
-		var brandName 		= arraySplit[0];
+		var travelPackage 	= $('input[name="city"]:checked').val();
+		var arraySplit 		= travelPackage.split(':');
+		var cityName 		= arraySplit[0];
 		var pointsAmount 	= arraySplit[1];
-		var description 	= "Purchased Retail Package: " + brandName;
-		var contract 		= brandName;
-		var e 				= document.getElementById("retailPackageChoice");
+		var description 	= "Purchased Travel Package to " + cityName;
+		var contract 		= cityName;
+		var e 				= document.getElementById("travelPackageChoice");
 
 		transferString = "sender=" + fromUser + "&receiver=" + toUser
 				+ "&amount=" + pointsAmount;
@@ -252,7 +252,7 @@
 		var url = localUrlStub + "/transferpoints?" + transferString
 				+ "&activities=2&type=Transfer&money=0"
 
-		blockchainRestApi(url, parseRetailPurchase);
+		blockchainRestApi(url, parseTravelPurchase);
 
 	}
 
@@ -263,13 +263,13 @@
 		var toUser = e.options[e.selectedIndex].value;
 		var fromUser = "T5940872";
 		var description = "Points For Feedback"
-		var contract 		= "Feedback";
-        
+
 		var pointsAmount = 1000;
 
-		var e = document.getElementById("retailPackageChoice");
+		var e = document.getElementById("travelPackageChoice");
 
-		transferString = "sender=" + fromUser + "&receiver=" + toUser + "&amount=" + pointsAmount + "&contract=" + contract + "&description=" + description;
+		transferString = "sender=" + fromUser + "&receiver=" + toUser
+				+ "&amount=" + pointsAmount + "&description=" + description;
 
 
 		var url = localUrlStub + "/transferpoints?" + transferString
@@ -298,7 +298,7 @@
 		var currentIndex = e.selectedIndex;
 		var currentUserId = e.options[e.selectedIndex].value;
 
-		// Only show the 'Create Retail Offer' tab for OpenRetail
+		// Only show the 'Create Travel Offer' tab for Open Travel
 		var contractTab = document.getElementById("CreateOfferListElement");
 		if (currentUserId == "T5940872") {
 			contractTab.style.display = "block";
@@ -311,7 +311,7 @@
 	// Submit a new smart contract to the Blockchain service using the NODE JS REST API
 	function addSmartContract() {
 
-		var e = document.getElementById("SmartContractBrand");
+		var e = document.getElementById("SmartContractCity");
 		var contractId = e.options[e.selectedIndex].value;
 		var title = document.getElementById("contractTitle").value;
 		var term1 = document.getElementById("term1").value;
@@ -355,7 +355,7 @@
 	$(document).ready(
 			function() {
 
-				document.getElementById("Retail Offers").addEventListener(
+				document.getElementById("Travel Offers").addEventListener(
 						"click", displaySmartContracts);
 				document.getElementById("Account Details").addEventListener(
 						"click", displayUserAccount);
@@ -380,7 +380,7 @@
 					<option value="U2974034">Natalie</option>
 					<option value="U3151672">Anthony</option>
 					<option value="B1928564">OpenFN</option>
-					<option value="T5940872">OpenRetail</option>
+					<option value="T5940872">Open Travel</option>
 				</select>
 
 			</div>
@@ -390,7 +390,7 @@
 
 		<ul class="tab">
 			<li><a href="#" class="tablinks"
-				onclick="openTab(event, 'Retail Offers')">Retail Offers</a></li>
+				onclick="openTab(event, 'Travel Offers')">Travel Offers</a></li>
 			<li><a href="#" class="tablinks"
 				onclick="openTab(event, 'Account Details')">Account Details</a></li>
 			<li><a href="#" class="tablinks"
@@ -399,38 +399,39 @@
 				onclick="openTab(event, 'Provide Feedback')">Provide Feedback</a></li>
 			<li id="CreateOfferListElement" style="display: none"><a
 				href="#" class="tablinks"
-				onclick="openTab(event, 'Create Retail Offers')">Create Retail
+				onclick="openTab(event, 'Create Travel Offers')">Create Travel
 					Offers</a></li>
 		</ul>
 
-		<div id="Retail Offers" class="tabcontent">
-			<span id='RetailOffersPage'>
+		<div id="Travel Offers" class="tabcontent">
+			<span id='TravelOffersPage'>
 
-				<h3>Retail Offers</h3>
+				<h3>Travel Offers</h3>
 				<hr>
 
 				<p id="smartContractTable"></p>
 
 
 
-				<h3 class="purchase-header">Purchase A Retail Package</h3>
+				<h3 class="purchase-header">Purchase A Travel Package</h3>
 				<hr>
 				<p></p>
-				<form id="retailPackageChoice">
-					<input type="radio" name="brand" value="Son_Brand:10000" checked>
-					Son_Brand: 10k Points <br> <input type="radio" name="brand"
-						value="LF_Brand:15000"> LF_Brand: 15k Points<br>
-					<input type="radio" name="brand" value="Sam_Brand:20000">
-					Sam_Brand: 20k Points <br> <input type="radio" name="brand"
-						value="Viz_Brand:25000"> Viz_Brand: 25k Points <br> <input
-						type="radio" name="brand" value="Sha_Brand:30000"> Sha_Brand: 30k Points <br>
+				<form id="travelPackageChoice">
+					<input type="radio" name="city" value="Paris:10000" checked>
+					Paris: 10k Points <br> <input type="radio" name="city"
+						value="New York City:15000"> New York City: 15k Points<br>
+					<input type="radio" name="city" value="London:20000">
+					London: 20k Points <br> <input type="radio" name="city"
+						value="Tokyo:25000"> Tokyo: 25k Points <br> <input
+						type="radio" name="city" value="Rio de Janeiro:30000"> Rio
+					de Janeiro: 30k Points <br>
 
 				</form>
 				<p></p>
-				<button onclick="purchaseRetailPackage()" class="purchase-btn">Purchase
-					Retail Package</button>
+				<button onclick="purchaseTravelPackage()" class="purchase-btn">Purchase
+					Travel Package</button>
 
-			</span> <span id='RetailOffersMessage' style='display: none'>
+			</span> <span id='TravelOffersMessage' style='display: none'>
 				Purchase completed! </span>
 		</div>
 
@@ -459,7 +460,7 @@
 					<option value="U2974034">Natalie</option>
 					<option value="U3151672">Anthony</option>
 					<option value="B1928564">OpenFN</option>
-					<option value="T5940872">OpenRetail</option>
+					<option value="T5940872">Open Travel</option>
 			</select>
 
 				<p></p>
@@ -481,7 +482,7 @@
 
 			<span id='FeedbackPage'>
 
-				<h3>Rate Your Retail Experience</h3>
+				<h3>Rate Your Travel Experience</h3>
 				<hr> Buying Process: <select id="process">
 					<option value="great">Great</option>
 					<option value="good">Good</option>
@@ -489,14 +490,14 @@
 					<option value="bad">Bad</option>
 					<option value="terrible">Terrible</option>
 			</select> <br>
-			<br> Price: <select id="price">
+			<br> Food: <select id="food">
 					<option value="great">Great</option>
 					<option value="good">Good</option>
 					<option value="fair">Fair</option>
 					<option value="bad">Bad</option>
 					<option value="terrible">Terrible</option>
 			</select> <br>
-			<br> Delivery: <select id="delivery">
+			<br> Transportation: <select id="transportation">
 					<option value="great">Great</option>
 					<option value="good">Good</option>
 					<option value="fair">Fair</option>
@@ -516,17 +517,17 @@
 			</span> <span id='FeedbackMessage'> Feedback submitted! </span>
 		</div>
 
-		<div id="Create Retail Offers" class="tabcontent">
+		<div id="Create Travel Offers" class="tabcontent">
 
 			<span id="CreateOfferPage">
-				<h3>Create Retail Offer</h3>
+				<h3>Create Travel Offer</h3>
 
-				<hr> <br> Package: <select id="SmartContractBrand">
-					<option value="Son_Brand">Son_Brand: 10k Points</option>
-					<option value="LF_Brand">LF_Brand: 15k Points</option>
-					<option value="Sam_Brand">Sam_Brand: 20k Points</option>
-					<option value="Viz_Brand">Viz_Brand: 25k Points</option>
-					<option value="Sha_Brand">Sha_Brand: 30k Points</option>
+				<hr> <br> Package: <select id="SmartContractCity">
+					<option value="Paris">Paris: 10k Points</option>
+					<option value="New York City">New York City: 15k Points</option>
+					<option value="London">London: 20k Points</option>
+					<option value="Tokyo">Tokyo: 25k Points</option>
+					<option value="Rio de Janeiro">Rio de Janeiro: 30k Points</option>
 			</select>
 				<p></p>
 
