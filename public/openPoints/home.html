@@ -320,7 +320,7 @@
 		discountRate = discountRate / 100.0;
 
 		var contractTerms = "contractid=" + contractId + "&title=" + title
-				+ "&condition1=" + term1 + "&condition2=" + term2
+				+ "&condition1=" + encodeURI(term1) + "&condition2=" + encodeURI(term2)
 				+ "&discountrate=" + discountRate;
 
 		var url = localUrlStub + "/addSmartContract?" + contractTerms;
