@@ -53,41 +53,23 @@ prepared to participate on the day of the lab.
  
 <b>
  You will land on your Bluemix Dashboard. 
- * If you have landed on the Dashboard view as shown below, proceed to [step 2](#acc_complete1).
- * If you did not get to the Dashboard, proceed to [step 1.8](#step_view). 
 </b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/dashboard.PNG)
 
-
-<a name="step_view">
-   1.8 If you land on the new Bluemix interface as shown below,</a> click on the highlighted area at the top right.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/newview1.PNG)   
-
- Click on 'Switch to Classic'.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/newview2.PNG)  
-
-You may be asked to login again. After login, you will land on the <b>Bluemix Dashboard</b>.
-
-
-
-<a name="acc_complete">
-<a name="acc_complete1">
-<b> 2. Ensure that you have the necessary space available in your Bluemix account to complete the lab. During the lab, you will be required to deploy 1 application and 2 services.  Go to your Bluemix Dashboard to check if you have the required space: </b></a></a>
+<b> 2. Ensure that you have the necessary space available in your Bluemix account to complete the lab. During the lab, you will be required to deploy 1 application and 2 services.  If you use a new Bluemix account, you should be good to go.  If you use an existing Bluemix account, you can go to your Bluemix Dashboard to check if you have the required space: </b>
   
-   * The 'Services & APIs' tile shows the number of services you have available. You will require space to deploy two services during the lab. If you do not have sufficient space for two services, then delete some existing services (visible in your dashboard) before proceeding to the next step. 
+   * The 'All Apps' Section shows the memory you have available for apps. You will require at least 512MB of free space to deploy an app during the lab. If you do not have 512MB of free space, then delete some existing apps (visible in your dashboard) before proceeding to the next step.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/services2.PNG)
 
-   * The 'Cloud Foundry Apps' tile shows the memory you have available for apps. You will require at least 512 MB of free space to deploy an app during the lab. If you do not have 256MB of free space, then delete some existing apps (visible in your dashboard) before proceeding to the next step.
+   * The 'All Services' Section shows the number of services you have available. You will require space to deploy two services during the lab. If you do not have sufficient space for two services, then delete some existing services (visible in your dashboard) before proceeding to the next step. 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/services1.PNG)
 
 ## Deploy the App
 
-<b>1. Click on the 'Deploy to Bluemix' button shown below (The button is located on this very webpage right below this bullet item - do NOT look for it within your bluemix account!).</b>
+<b>1. Click on the 'Deploy to Bluemix' button shown below (NOTE: The button is located on this very webpage right below this bullet item - do NOT look for it within your bluemix account!).</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp)
 
@@ -101,7 +83,7 @@ You may be asked to login again. After login, you will land on the <b>Bluemix Da
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/alias.PNG)
 
 
-3.2 Verify your alias name and click continue.
+3.2 Verify your alias name and click continue.<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/cont.PNG)
 
 
@@ -129,7 +111,7 @@ You will land on the Overview page of your application.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/yourapp.PNG)
 
 
-<b>6. Click on the blockchain service tile.</b>
+<b>6. Click on the blockchain service row.</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/launchBlockchainService.png)
 
@@ -139,7 +121,7 @@ You will land on the Overview page of the blockchain service, which should appea
 
 <b>7. The application and services have been successfully deployed, and you are now ready to begin the lab!</b>
 
-Download the [lab handout](https://ibm.biz/Bdru73) to begin the lab. 
+Download the [lab handout](https://ibm.biz/BdifZ7) to begin the lab. 
 
 # Troubleshooting
 
