@@ -3,7 +3,7 @@
 Welcome! These instructions describe the prerequisites you should complete before attending the lab session. Please follow these steps to ensure that you are fully 
 prepared to participate on the day of the lab.
 
-<b>IMPORTANT NOTICE: This lab relies on Bluemix and services such as Blockchain and Node JS. It may not work exactly as documented when Bluemix and/or the underlying services are updated. Please contact us if you experience problems with the lab. The lab documents were last updated on September 9th of 2016, and the Bluemix service functionality was last validated on December 5th of 2016. 
+<b>IMPORTANT NOTICE: This lab relies on Bluemix and services such as Blockchain and Node JS. It may not work exactly as documented when Bluemix and/or the underlying services are updated. Please contact us if you experience problems with the lab. The lab documents were last updated on April 24th of 2017, and the Bluemix service functionality was last validated on April 24th of 2017. 
 </b>
 
 
@@ -137,8 +137,9 @@ service can be successfully created.
 <b>Deleting the application.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/app_del1.PNG)
 
-
-
+<b>If you encounter these errors during deployment, try these resolutions</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting1.PNG)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting2.PNG)
 
 
 # License
