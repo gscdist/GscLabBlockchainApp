@@ -98,7 +98,7 @@ and click 'DEPLOY'.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy1.PNG)
 
 
-* The status of the deployment (creating a toolchain) is shown. This can take approximately 3-5 minutes to complete.  
+* The status of the deployment (creating a toolchain) is shown. This can take approximately 1-3 minutes to complete.  
 * Once the toolchain is created/ready (A greencheck appears at the top).  Click on Delivery Pipeline tile to see status of deployment to Bluemix.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/createproject1.PNG)
@@ -146,9 +146,6 @@ service can be successfully created.
 <b>Deleting the application.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/app_del1.PNG)
 
-<b>If you encounter these errors during deployment, try these resolutions:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting1.PNG)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting2.PNG)
 
 
 # License
