@@ -146,7 +146,8 @@ service can be successfully created.
 <b>Deleting the application.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/app_del1.PNG)
 
-
+<b>If you encounter these errors during deployment, try these resolutions:</b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting3.PNG)
 
 # License
 
