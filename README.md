@@ -134,6 +134,10 @@ Download the [lab handout](https://ibm.biz/XXX) to begin the lab.
 
 # Troubleshooting
 
+If you encounter these errors during deployment, try these resolutions:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting3.PNG)
+
 If you receive the error message shown below that the network is over capacity, then the service was not created. 
 Please delete the blockchain service and the lab application, and repeat the deployment steps listed above until a blockchain
 service can be successfully created. 
@@ -146,14 +150,11 @@ service can be successfully created.
 <b>Deleting the application.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/app_del1.PNG)
 
-<b>If you encounter these errors during deployment, try these resolutions:</b>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting3.PNG)
 
 # License
 
   This sample code is licensed under Apache 2.0.
   Full license text is available in [LICENSE](LICENSE).
-
 
 
 ## Open Source @ IBM
