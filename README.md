@@ -134,8 +134,7 @@ Download the [lab handout](https://ibm.biz/XXX) to begin the lab.
 
 # Troubleshooting
 
-If you encounter these errors during deployment, try these resolutions:
-
+If you encounter these errors during deployment, try these resolutions.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/troubleshooting3.PNG)
 
 If you receive the error message shown below that the network is over capacity, then the service was not created. 
