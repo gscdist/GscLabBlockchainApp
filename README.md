@@ -73,9 +73,9 @@ prepared to participate on the day of the lab.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp)
 
-<b>2. Log in with your Bluemix account.</b>
+<b>2. Log in with your Bluemix account, if you are not already logged in.</b>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy.PNG)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deployLogin.PNG)
 
 <b>3. If you are asked to choose an alias, then follow these instructions. Otherwise, proceed to step 4 in this section. </b>
 
@@ -87,22 +87,30 @@ prepared to participate on the day of the lab.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/cont.PNG)
 
 
-<b>4.  Leave the default app name that Bluemix chooses as is. You may modify the default Organization 
+<b>4. Click on 'Delivery Pipeline' to verify the pipeline parameters.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy.PNG)
+
+Leave the default app name that Bluemix chooses as is. You may modify the default Organization 
 and Space if you would like the app deployed to a specific area of your Bluemix account. Otherwise, accept the default values
 and click 'DEPLOY'.</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy1.PNG)
 
 
-* The status of the deployment is shown. This can take approximately 3-5 minutes to complete.
+* The status of the deployment (creating a toolchain) is shown. This can take approximately 3-5 minutes to complete.  Click on Delivery Pipeline tile to see status of deployment to Bluemix.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/createproject.PNG)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/createproject1.PNG)
+
+* The status of the deployment (deploying to Bluemix) is shown. This can take approximately 10-15 minutes to complete.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/createproject2.PNG)
 
 * The deployment process performs the following actions:
   - Creates a Node JS application
   - Creates a blockchain service
 
-<b>5. After the deployment has completed, click on the 'Deployed to Bluemix sucessfully' link. </b>
+<b>5. After the deployment has completed, click on the 'GscLabBlockchainApp-xxx' app link. </b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res.PNG)
 
