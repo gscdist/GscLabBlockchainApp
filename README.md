@@ -71,7 +71,7 @@ prepared to participate on the day of the lab.
 
 <b>1. Click on the 'Deploy to Bluemix' button shown below (NOTE: The button is located on this very webpage right below this bullet item - do NOT look for it within your bluemix account!).</b>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button.png)](https://console.ng.bluemix.net/devops/setup/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp.git)
 
 <b>2. Log in with your Bluemix account, if you are not already logged in.</b>
 
