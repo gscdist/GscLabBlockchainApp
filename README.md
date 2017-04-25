@@ -98,7 +98,8 @@ and click 'DEPLOY'.</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy1.PNG)
 
 
-* The status of the deployment (creating a toolchain) is shown. This can take approximately 3-5 minutes to complete.  Click on Delivery Pipeline tile to see status of deployment to Bluemix.
+* The status of the deployment (creating a toolchain) is shown. This can take approximately 3-5 minutes to complete.  
+* Once the toolchain is created/ready (A greencheck appears at the top).  Click on Delivery Pipeline tile to see status of deployment to Bluemix.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/createproject1.PNG)
 
