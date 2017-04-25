@@ -121,7 +121,7 @@ You will land on the Overview page of the blockchain service, which should appea
 
 <b>7. The application and services have been successfully deployed, and you are now ready to begin the lab!</b>
 
-Download the [lab handout](https://ibm.biz/BdifY4) to begin the lab. 
+Download the [lab handout](https://ibm.biz/XXX) to begin the lab. 
 
 # Troubleshooting
 
