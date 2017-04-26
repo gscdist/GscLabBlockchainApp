@@ -112,7 +112,7 @@ and click 'Create'.</b>
   - Creates a Node JS application
   - Creates a blockchain service
 
-<b>5. After the deployment has completed, click on the menu icon 'Hamburger icon'. </b>
+<b>5. After the deployment has completed, click on the menu icon 'Hamburger icon' on the upper left corner. </b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res1.png)
 
