@@ -6,6 +6,7 @@ prepared to participate on the day of the lab.
 <b>IMPORTANT NOTICE: This lab relies on Bluemix and services such as Blockchain and Node JS. It may not work exactly as documented when Bluemix and/or the underlying services are updated. Please contact us if you experience problems with the lab. The lab documents were last updated on April 24th of 2017, and the Bluemix service functionality was last validated on April 24th of 2017. 
 </b>
 
+<b>Disclaimer: The code provided in this lab exercise is for educational purpose only.  It is not production level code and may not follow best practices. </b>
 
 ## Prepare your Bluemix account
 
