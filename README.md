@@ -112,9 +112,13 @@ and click 'DEPLOY'.</b>
   - Creates a Node JS application
   - Creates a blockchain service
 
-<b>5. After the deployment has completed, click on the 'GscLabBlockchainApp-xxx' app link. </b>
+<b>5. After the deployment has completed, click on the menu icon 'Hamburger icon'. </b>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res.PNG)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res1.png)
+
+Click on Apps and then Dashboard. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res2.png)
 
 You will land on the Overview page of your application. 
 
