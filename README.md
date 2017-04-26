@@ -120,7 +120,7 @@ Click on Apps and then Dashboard.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res2.png)
 
-You will land on the Bluemix Apps Dashboard. (It may take a few minutes for the OpenPointsBlockchainService to show.) 
+You will land on the Bluemix Apps Dashboard. (It may take a few minutes for the OpenPointsBlockchainService to show up.) 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/yourapp.PNG)
 
