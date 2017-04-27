@@ -75,7 +75,7 @@ prepared to participate on the day of the lab.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button.png)](https://console.ng.bluemix.net/devops/setup/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp.git)
 
-<b>2. Log in with your Bluemix account, if you are not already logged in.</b>
+<b>2. On your new browser tab, log in with your Bluemix account, if you are not already logged in.</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deployLogin.PNG)
 
