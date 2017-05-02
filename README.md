@@ -70,7 +70,7 @@ prepared to participate on the day of the lab.
 
 ## Deploy the App
 
-<b>1. Right-Click (and "Open Link in New Tab") on the 'Deploy to Bluemix' button shown below.<br>
+<b>1. Right-Click and "Open Link in New Tab" on the 'Deploy to Bluemix' button shown below.<br>
 (NOTE: The button is located on this VERY webpage right below this bullet item - do NOT look for it within your bluemix account!).</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://console.ng.bluemix.net/devops/setup/deploy/button.png)](https://console.ng.bluemix.net/devops/setup/deploy?repository=https://github.com/gscdist/GscLabBlockchainApp.git)
@@ -79,17 +79,8 @@ prepared to participate on the day of the lab.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deployLogin.PNG)
 
-<b>3. If you are asked to choose an alias, then follow these instructions. Otherwise, proceed to step 4 in this section. </b>
 
-3.1 Enter a unique alias name and click create.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/alias.PNG)
-
-
-3.2 Verify your alias name and click continue.<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/cont.PNG)
-
-
-<b>4. Click on 'Delivery Pipeline' to verify the pipeline parameters.
+<b>3. Click on 'Delivery Pipeline' to verify the pipeline parameters.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![](readme_images/deploy.PNG)
 
@@ -113,7 +104,7 @@ and click 'Create'.</b>
   - Creates a Node JS application
   - Creates a blockchain service
 
-<b>5. After the deployment has completed, click on the menu icon 'Hamburger icon' on the upper left corner. </b>
+<b>4. After the deployment has completed, click on the menu icon 'Hamburger icon' on the upper left corner. </b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/res1.png)
 
@@ -126,7 +117,7 @@ You will land on the Bluemix Apps Dashboard. (It may take a few minutes for the 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/yourapp.PNG)
 
 
-<b>6. Click on the blockchain service row.</b>
+<b>5. Click on the blockchain service row.</b>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/launchBlockchainService.png)
 
@@ -134,7 +125,7 @@ You will land on the Overview page of the blockchain service, which should appea
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/correctBlockchainLaunch.png)
 
-<b>7. The application and services have been successfully deployed, and you are now ready to begin the lab!</b>
+<b>6. The application and services have been successfully deployed, and you are now ready to begin the lab!</b>
 
 Download the [lab handout](https://ibm.biz/XXX) to begin the lab. 
 
