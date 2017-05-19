@@ -60,7 +60,7 @@ prepared to participate on the day of the lab.
 
 <b> 2. Ensure that you have the necessary space available in your Bluemix account to complete the lab. During the lab, you will be required to deploy 1 application and 2 services.  If you use a new Bluemix account, you should be good to go.  If you use an existing Bluemix account, you can go to your Bluemix Dashboard to check if you have the required space: </b>
   
-   * The 'All Apps' Section shows the memory you have available for apps. You will require at least 512MB of free space to deploy an app during the lab. If you do not have 512MB of free space, then delete some existing apps (visible in your dashboard) before proceeding to the next step.
+   * The 'All Apps' Section shows the memory you have available for apps. You will require at least 256MB of free space to deploy an app during the lab. If you do not have 256MB of free space, then delete some existing apps (visible in your dashboard) before proceeding to the next step.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/services2.PNG)
 
